@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
+    "develop": "ng build -op dist -w & nodemon ./bin/server",
     "start": "ng build && node ./bin/server",
     "build": "ng build --prod",
     "test": "ng test",
@@ -27,6 +28,7 @@
     "express": "^4.16.2",
     "mongoose": "^5.0.7",
     "morgan": "^1.9.0",
+    "nodemon": "^1.17.5",
     "rxjs": "^5.5.6",
     "serve-favicon": "^2.4.5",
     "zone.js": "^0.8.19"
